@@ -1,4 +1,3 @@
----
 ##  Final `README.md` for **Resume-Rating-Tool**
 
 ````markdown
