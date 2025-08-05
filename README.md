@@ -1,9 +1,10 @@
-## ✅ Final `README.md` for **Resume-Rating-Tool**
+---
+##  Final `README.md` for **Resume-Rating-Tool**
 
 ````markdown
 # Resume-Rating-Tool
 
-**Resume-Rating-Tool** is an AI-powered web application that evaluates resumes based on layout, content, and structure. Users upload a resume in PDF format, and the app uses Google's Gemini 1.5 Pro model to generate a rating (out of 10) and actionable suggestions to improve the resume.
+**Resume-Rating-Tool** is an AI-powered web application that evaluates resumes based on layout, content, and structure. Users upload a resume in PDF format, and the app uses Google's Gemini 2.5 flash model to generate a rating (out of 10) and actionable suggestions to improve the resume.
 
 ---
 
@@ -38,6 +39,7 @@ This guide will help you recreate the project on your local machine.
 
 - Python 3.9 or higher
 - A Google account to generate a Gemini API key
+- An internet connection
 - (Optional) Anaconda and Visual Studio Code
 
 ---
@@ -171,7 +173,23 @@ Resume-Rating-Tool/
 ├── app.py                # Main Streamlit app
 ├── resume_page.png       # Temporary image file (created at runtime)
 └── README.md             # Project documentation
+
 ```
+
+---
+
+## Optional Enhancements
+
+* Save feedback to a text or PDF report
+* Add text-based analysis alongside image review
+* Compare multiple resumes side-by-side
+* Deploy the app to the web using Streamlit Cloud or Render
+* Enable light/dark mode themes
+
+---
+
+
+
 
 
 ## Credits
@@ -184,4 +202,7 @@ This application was built using:
 * [Plotly](https://plotly.com/)
 
 ```
+
+---
+
 
