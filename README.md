@@ -1,20 +1,17 @@
-##  Final `README.md` for **Resume-Rating-Tool**
-
-````markdown
 # Resume-Rating-Tool
 
-**Resume-Rating-Tool** is an AI-powered web application that evaluates resumes based on layout, content, and structure. Users upload a resume in PDF format, and the app uses Google's Gemini 2.5 flash model to generate a rating (out of 10) and actionable suggestions to improve the resume.
+**Resume-Rating-Tool** is an AI-powered web application that evaluates resumes based on layout, content, and structure. Users upload a resume in PDF format, and the app uses Google's Gemini 1.5 Pro model to generate a rating (out of 10) and actionable suggestions to improve the resume.
 
 ---
 
 ## Features
 
-- Upload resumes in PDF format through a web interface
-- Automatically converts the PDF into an image
-- Sends the image to Gemini for analysis
-- Extracts and displays a rating using a circular gauge
-- Lists suggestions to improve the resume’s quality and presentation
-- Simple, modern user interface built with Streamlit
+- Upload resumes in PDF format through a web interface  
+- Automatically converts the first page of the PDF into an image  
+- Sends the image to Gemini for analysis  
+- Extracts and displays a rating using a circular gauge  
+- Lists suggestions to improve the resume’s quality and presentation  
+- Clean and responsive user interface built with Streamlit
 
 ---
 
@@ -22,37 +19,37 @@
 
 | Technology            | Purpose                             |
 |------------------------|--------------------------------------|
-| Python                 | Main programming language            |
-| Streamlit              | UI framework                         |
-| PyMuPDF (`fitz`)       | PDF to image conversion              |
-| Plotly                 | Ring-style gauge visualization       |
-| `google-generativeai` | Gemini 1.5 Pro API interaction        |
+| Python                 | Core programming language            |
+| Streamlit              | Web application interface            |
+| PyMuPDF (`fitz`)       | Convert PDF to image                 |
+| Plotly                 | Visual ring gauge for score          |
+| `google-generativeai` | Communicate with Gemini API          |
 
 ---
 
 ## Setup Instructions
 
-This guide will help you recreate the project on your local machine.
-
-### 1. Prerequisites
-
-- Python 3.9 or higher
-- A Google account to generate a Gemini API key
-- An internet connection
-- (Optional) Anaconda and Visual Studio Code
+This section explains how to run the project locally on your machine.
 
 ---
 
-### 2. Create a Python Environment (Recommended)
+### 1. Prerequisites
 
-Using Anaconda Prompt:
+- Python 3.9 or higher  
+- A Google account (to access Gemini API)  
+- (Optional) Anaconda and Visual Studio Code  
+- Internet connection
+
+---
+
+### 2. Create a Virtual Environment (Optional but Recommended)
+
+Using Anaconda:
 
 ```bash
 conda create -n resume-rating python=3.11
 conda activate resume-rating
-````
 
----
 
 ### 3. Install Dependencies
 
