@@ -7,7 +7,7 @@
 ## Features
 
 - Upload resumes in PDF format through a web interface  
-- Automatically converts the first page of the PDF into an image  
+- Automatically converts the PDF into an image  
 - Sends the image to Gemini for analysis  
 - Extracts and displays a rating using a circular gauge  
 - Lists suggestions to improve the resume’s quality and presentation  
@@ -37,9 +37,8 @@ This section explains how to run the project locally on your machine.
 
 - Python 3.9 or higher  
 - A Google account (to access Gemini API)  
-- (Optional) Anaconda and Visual Studio Code  
-- Internet connection
-
+- (Optional) Anaconda and Visual Studio Code
+  
 ---
 
 ### 2. Create a Virtual Environment (Optional but Recommended)
@@ -49,11 +48,19 @@ Using Anaconda:
 ```bash
 conda create -n resume-rating python=3.11
 conda activate resume-rating
+```
 
+Or using `venv`:
+
+```bash
+python -m venv resume-rating
+resume-rating\Scripts\activate  # On Windows
+source resume-rating/bin/activate  # On macOS/Linux
+```
+
+---
 
 ### 3. Install Dependencies
-
-Install the required libraries using pip:
 
 ```bash
 pip install streamlit PyMuPDF google-generativeai plotly
@@ -63,10 +70,10 @@ pip install streamlit PyMuPDF google-generativeai plotly
 
 ### 4. Generate Your Gemini API Key
 
-1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Sign in with your Google account
-3. Click **Create API Key**
-4. Copy the key
+1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)  
+2. Sign in with your Google account  
+3. Click **Create API Key**  
+4. Copy the key  
 5. Paste it into your `app.py` script as shown below
 
 ---
@@ -152,13 +159,11 @@ Replace `"YOUR_API_KEY_HERE"` with your actual Gemini API key.
 
 ### 6. Run the Application
 
-In your terminal or Anaconda Prompt, run:
-
 ```bash
 streamlit run app.py
 ```
 
-The app will open in your browser at `http://localhost:8501`.
+Then open `http://localhost:8501` in your browser to use the app.
 
 ---
 
@@ -169,36 +174,25 @@ Resume-Rating-Tool/
 ├── app.py                # Main Streamlit app
 ├── resume_page.png       # Temporary image file (created at runtime)
 └── README.md             # Project documentation
-
 ```
 
 ---
 
 ## Optional Enhancements
 
-* Save feedback to a text or PDF report
-* Add text-based analysis alongside image review
-* Compare multiple resumes side-by-side
-* Deploy the app to the web using Streamlit Cloud or Render
-* Enable light/dark mode themes
+- Save feedback to a text or PDF report  
+- Add text-based analysis alongside image review  
+- Compare multiple resumes side-by-side  
+- Deploy the app to the web using Streamlit Cloud or Render  
+- Enable light/dark mode themes
 
 ---
-
-
-
-
 
 ## Credits
 
 This application was built using:
 
-* [Streamlit](https://streamlit.io)
-* [Google Gemini API](https://ai.google.dev/)
-* [PyMuPDF](https://pymupdf.readthedocs.io/)
-* [Plotly](https://plotly.com/)
-
-```
-
----
-
-
+- [Streamlit](https://streamlit.io)  
+- [Google Gemini API](https://ai.google.dev/)  
+- [PyMuPDF](https://pymupdf.readthedocs.io/)  
+- [Plotly](https://plotly.com/)
