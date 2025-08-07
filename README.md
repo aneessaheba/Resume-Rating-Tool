@@ -1,6 +1,7 @@
 # Resume-Rating-Tool
 
-[![IMAGE ALT TEXT HERE]((https://www.youtube.com/watch?v=BlRsV5bcJPU).jpg)](https://youtu.v=BlRsV5bcJPU)
+[![Watch the video](https://img.youtube.com/vi/BlRsV5bcJPU/maxresdefault.jpg)](https://www.youtube.com/watch?v=BlRsV5bcJPU)
+
 
 **Resume-Rating-Tool** is an AI-powered web application that evaluates resumes based on layout, content, and structure. Users upload a resume in PDF format, and the app uses Google's Gemini 1.5 Pro model to generate a rating (out of 10) and actionable suggestions to improve the resume.
 
